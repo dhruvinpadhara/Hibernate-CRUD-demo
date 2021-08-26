@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/hibernate</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password"></property>
+		<property name="show_sql">true</property>													
+		<property name="hbm2ddl.auto">update</property>
+		
+		<mapping class="hiber1.model"/>
+		<mapping class="hiber1.smodel"/>
+		<mapping class="hiber1.onem"/> 
+		<mapping class="hiber1.sample"/>
+		<mapping class="hiber1.Form_model"/>
+		<mapping class="hiber1.Form_model1"/>
+		<mapping class="hiber1.Hobby_model"/>
+		<mapping class="hiber1.model1.User_model"/>
+		<mapping class="hiber1.model1.Hobby_model1"/>
+	<!-- <property name="hibernate.enable_lazy_load_no_trans">true</property> -->
+	</session-factory>
+</hibernate-configuration>
